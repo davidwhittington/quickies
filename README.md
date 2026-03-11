@@ -15,9 +15,21 @@ quickies/
 └── docs/       Documentation, references, and notes
 ```
 
+## Scripts
+
+| Script | Description | Usage |
+|--------|-------------|-------|
+| _(none yet)_ | | |
+
+## Apps
+
+| App | Description | How to run |
+|-----|-------------|------------|
+| _(none yet)_ | | |
+
 ## How to use
 
-Browse by directory. Each script or app should have a comment header explaining what it does and how to run it.
+Browse by directory. Each script or app has a comment header explaining what it does and how to run it. Everything added here is also listed in the tables above.
 
 ## License
 
