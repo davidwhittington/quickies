@@ -19,7 +19,7 @@ quickies/
 
 | Script | Description | Usage |
 |--------|-------------|-------|
-| _(none yet)_ | | |
+| `export_apple_contacts.applescript` | Export Apple Contacts to CSV (first name, last name, phone, email) | `osascript scripts/export_apple_contacts.applescript` |
 
 ## Apps
 
