@@ -20,6 +20,7 @@ quickies/
 | Script | Description | Usage |
 |--------|-------------|-------|
 | `export_apple_contacts.applescript` | Export Apple Contacts to CSV (first name, last name, phone, email) | `osascript scripts/export_apple_contacts.applescript` |
+| `fortigate-bbedit/` | BBEdit codeless language module for FortiGate/FortiOS config files (syntax highlighting, keywords, function nav) | `cp scripts/fortigate-bbedit/FortiGate.plist ~/Library/Application\ Support/BBEdit/Language\ Modules/` |
 
 ## Apps
 

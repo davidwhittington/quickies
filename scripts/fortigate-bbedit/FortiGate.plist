@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BBEditDocumentType</key>
+	<string>CodelessLanguageModule</string>
+
+	<key>BBLMLanguageDisplayName</key>
+	<string>FortiGate Config</string>
+
+	<key>BBLMLanguageCode</key>
+	<string>FGat</string>
+
+	<key>BBLMFileExtensions</key>
+	<array>
+		<string>.conf</string>
+	</array>
+
+	<key>BBLMColorsSyntax</key>
+	<true/>
+
+	<key>BBLMIsCaseSensitive</key>
+	<false/>
+
+	<key>BBLMScansFunctions</key>
+	<true/>
+
+	<key>BBLMCanSpellCheckCodeRuns</key>
+	<false/>
+
+	<!-- Comment definitions -->
+	<key>BBLMCommentLineDefault</key>
+	<string>#</string>
+
+	<!-- Function scanning: match "config ..." and "edit ..." blocks -->
+	<key>BBLMFunctionScannerPreclassifiedKeywords</key>
+	<dict>
+		<key>config</key>
+		<string>com.barebones.bblm.function-def</string>
+		<key>edit</key>
+		<string>com.barebones.bblm.function-def</string>
+	</dict>
+
+	<!-- Keywords -->
+	<key>BBLMKeywordList</key>
+	<array>
+		<!-- CLI command verbs -->
+		<string>config</string>
+		<string>edit</string>
+		<string>set</string>
+		<string>unset</string>
+		<string>next</string>
+		<string>end</string>
+		<string>get</string>
+		<string>show</string>
+		<string>execute</string>
+		<string>diagnose</string>
+		<string>delete</string>
+		<string>abort</string>
+		<string>append</string>
+		<string>select</string>
+		<string>clone</string>
+		<string>move</string>
+		<string>purge</string>
+		<string>rename</string>
+
+		<!-- Top-level config sections (FortiOS 7.6) -->
+		<string>alertemail</string>
+		<string>antivirus</string>
+		<string>application</string>
+		<string>authentication</string>
+		<string>automation</string>
+		<string>casb</string>
+		<string>certificate</string>
+		<string>diameter-filter</string>
+		<string>dlp</string>
+		<string>dnsfilter</string>
+		<string>dpdk</string>
+		<string>emailfilter</string>
+		<string>endpoint-control</string>
+		<string>extension-controller</string>
+		<string>file-filter</string>
+		<string>firewall</string>
+		<string>ftp-proxy</string>
+		<string>icap</string>
+		<string>ips</string>
+		<string>log</string>
+		<string>monitoring</string>
+		<string>report</string>
+		<string>router</string>
+		<string>rule</string>
+		<string>sctp-filter</string>
+		<string>spamfilter</string>
+		<string>ssh-filter</string>
+		<string>switch-controller</string>
+		<string>system</string>
+		<string>user</string>
+		<string>videofilter</string>
+		<string>voip</string>
+		<string>vpn</string>
+		<string>waf</string>
+		<string>wanopt</string>
+		<string>web-proxy</string>
+		<string>webfilter</string>
+		<string>wireless-controller</string>
+
+		<!-- Common sub-sections and objects -->
+		<string>global</string>
+		<string>vdom</string>
+		<string>address</string>
+		<string>address6</string>
+		<string>addrgrp</string>
+		<string>addrgrp6</string>
+		<string>policy</string>
+		<string>policy6</string>
+		<string>interface</string>
+		<string>zone</string>
+		<string>service</string>
+		<string>schedule</string>
+		<string>vip</string>
+		<string>vip6</string>
+		<string>ippool</string>
+		<string>ippool6</string>
+		<string>phase1-interface</string>
+		<string>phase2-interface</string>
+		<string>static</string>
+		<string>ospf</string>
+		<string>ospf6</string>
+		<string>bgp</string>
+		<string>rip</string>
+		<string>isis</string>
+		<string>multicast</string>
+		<string>policy-route</string>
+		<string>route-map</string>
+		<string>prefix-list</string>
+		<string>access-list</string>
+		<string>community-list</string>
+		<string>dns</string>
+		<string>ntp</string>
+		<string>admin</string>
+		<string>ha</string>
+		<string>snmp</string>
+		<string>syslogd</string>
+		<string>central-management</string>
+		<string>ssl-vpn</string>
+		<string>profile</string>
+		<string>sensor</string>
+		<string>custom</string>
+		<string>group</string>
+		<string>local</string>
+		<string>ldap</string>
+		<string>radius</string>
+		<string>saml</string>
+		<string>tacacs+</string>
+		<string>fortiguard</string>
+		<string>fortimanager</string>
+		<string>fortianalyzer</string>
+		<string>replacemsg</string>
+		<string>shaping-profile</string>
+		<string>shaping-policy</string>
+		<string>traffic-shaper</string>
+		<string>internet-service</string>
+		<string>internet-service-group</string>
+		<string>ssl-ssh-profile</string>
+		<string>proxy-policy</string>
+		<string>consolidated</string>
+		<string>sdn-connector</string>
+		<string>automation-stitch</string>
+		<string>automation-trigger</string>
+		<string>automation-action</string>
+		<string>virtual-switch</string>
+		<string>virtual-wire-pair</string>
+		<string>link-monitor</string>
+		<string>health-check</string>
+		<string>sd-wan</string>
+		<string>performance-sla</string>
+		<string>accprofile</string>
+		<string>api-user</string>
+		<string>session-helper</string>
+		<string>nat</string>
+		<string>central-snat-map</string>
+		<string>dos-policy</string>
+		<string>multicast-policy</string>
+		<string>local-in-policy</string>
+		<string>ldb-monitor</string>
+		<string>geoip-country</string>
+		<string>ttl-policy</string>
+
+		<!-- Common set values -->
+		<string>enable</string>
+		<string>disable</string>
+		<string>accept</string>
+		<string>deny</string>
+		<string>drop</string>
+		<string>reject</string>
+		<string>all</string>
+		<string>any</string>
+		<string>always</string>
+		<string>none</string>
+		<string>utm</string>
+		<string>ipsec</string>
+		<string>ssl</string>
+		<string>up</string>
+		<string>down</string>
+		<string>transparent</string>
+		<string>nat</string>
+
+		<!-- Execute sub-commands -->
+		<string>ping</string>
+		<string>traceroute</string>
+		<string>shutdown</string>
+		<string>reboot</string>
+		<string>backup</string>
+		<string>restore</string>
+		<string>factoryreset</string>
+
+		<!-- Diagnose sub-commands -->
+		<string>sniffer</string>
+		<string>packet</string>
+		<string>debug</string>
+		<string>netlink</string>
+		<string>hardware</string>
+		<string>test</string>
+
+		<!-- Log sub-sections -->
+		<string>disk</string>
+		<string>memory</string>
+		<string>forticloud</string>
+		<string>syslogd2</string>
+		<string>syslogd3</string>
+		<string>syslogd4</string>
+		<string>setting</string>
+		<string>filter</string>
+
+		<!-- Misc objects -->
+		<string>list</string>
+		<string>status</string>
+		<string>arp</string>
+		<string>console</string>
+		<string>gui-dashboard</string>
+		<string>wccp</string>
+		<string>ethernet-oam</string>
+		<string>nsxt</string>
+		<string>aws</string>
+		<string>azure</string>
+		<string>gcp</string>
+		<string>oci</string>
+	</array>
+
+	<!-- Predefined names (structure commands, shown in a different color) -->
+	<key>BBLMPredefinedNameList</key>
+	<array>
+		<string>config</string>
+		<string>edit</string>
+		<string>end</string>
+		<string>next</string>
+		<string>set</string>
+		<string>unset</string>
+		<string>get</string>
+		<string>show</string>
+		<string>execute</string>
+		<string>diagnose</string>
+		<string>delete</string>
+		<string>abort</string>
+		<string>append</string>
+		<string>select</string>
+		<string>clone</string>
+		<string>move</string>
+		<string>purge</string>
+		<string>rename</string>
+	</array>
+
+	<!-- String delimiters -->
+	<key>BBLMStringDelimiters</key>
+	<array>
+		<dict>
+			<key>BBLMStringStartSequence</key>
+			<string>"</string>
+			<key>BBLMStringEndSequence</key>
+			<string>"</string>
+		</dict>
+		<dict>
+			<key>BBLMStringStartSequence</key>
+			<string>'</string>
+			<key>BBLMStringEndSequence</key>
+			<string>'</string>
+		</dict>
+	</array>
+</dict>
+</plist>
